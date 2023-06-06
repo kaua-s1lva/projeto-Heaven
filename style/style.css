@@ -1,0 +1,107 @@
+/*
+cor background: #222222
+verde: #00B85A
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'ubuntu';
+}
+
+.img-main {
+    width: 100%;
+    max-height: 900px;
+    object-fit: cover;
+    object-position: center;
+    filter: brightness(25%);
+}
+
+header {
+    text-align: center;
+    background-color: #00B85A;
+}
+
+header h1 {
+    padding: 20px;
+    
+}
+
+.section-1 {
+    position: absolute;
+    text-align: center;
+    width: 50%;
+    top: 30%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    color: white;
+    font-size: 1.7em;
+}
+
+.title {
+    font-size: 2.8em;
+    font-weight: 800;  
+}
+
+/*botão contato */
+
+    button {
+    outline: none;
+    cursor: pointer;
+    border: none;
+    padding: 0.9rem 2rem;
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    position: relative;
+    display: inline-block;
+    letter-spacing: 0.05rem;
+    font-weight: 700;
+    font-size: 20px;
+    border-radius: 500px;
+    overflow: hidden;
+    background: ghostwhite;
+    color: black;
+   }
+   
+   button span {
+    position: relative;
+    z-index: 10;
+    transition: color 0.4s;
+   }
+   
+   button:hover span {
+    color: #222222;
+   }
+   
+   button::before,
+   button::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+   }
+   
+   button::before {
+    content: "";
+    background: #00B85A;
+    width: 120%;
+    left: -10%;
+    transform: skew(30deg);
+    transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+   }
+   
+   button:hover::before {
+    transform: translate3d(100%, 0, 0);
+   }
+
+.section-2 {
+    background-color: #222222;
+    
+}
