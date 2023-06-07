@@ -23,16 +23,18 @@ body {
 
 header {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    gap: 10px;
     background-color: #222222;
     text-align: center;
     color: aliceblue;
     font-size: 1.1vw;
+    padding: 8px 0;
 }
 
 header img {
-    width: 8vw;
+    width: 4vw;
 }
 
 .texto-principal {
@@ -45,12 +47,12 @@ header img {
     right: 0;
     margin: auto;
     color: white;
-    font-size: 1.5vw;
+    font-size: 1.4vw;
     text-shadow: 0.1em 0.1em 0.2em black;
 }
 
 .title {
-    font-size: 4.8vw;
+    font-size: 4.6vw;
     font-weight: 800;
     text-shadow: 0.1em 0.1em 0.2em black;
 }
@@ -86,7 +88,22 @@ header img {
 .img-trab {
     width: 30vw;
     margin: 0 auto;
-    max-height: 30vh;
+    max-height: 35vh;
     padding: 15px;
 }
 
+.local {
+    overflow:hidden;
+    padding-bottom:40%;
+    position:relative;
+    height:0;
+}
+
+.local iframe {
+    left:0;
+    top:0;
+    height:50vh;
+    width:100%;
+    position:absolute;
+    filter: grayscale(100%) invert(100%);
+}
