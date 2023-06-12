@@ -92,18 +92,6 @@ header img {
     padding: 15px;
 }
 
-.local {
-    overflow:hidden;
-    padding-bottom:40%;
-    position:relative;
-    height:0;
-}
-
-.local iframe {
-    left:0;
-    top:0;
-    height:50vh;
-    width:100%;
-    position:absolute;
-    filter: grayscale(100%) invert(100%);
+#map {
+    height: 500px;
 }
